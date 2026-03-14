@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from '@/components/Header';
-import PromoCountdown from '@/components/PromoCountdown';
 import HeroSection from '@/components/HeroSection';
 import ServicesSection from '@/components/ServicesSection';
 import ReservationSection from '@/components/ReservationSection';
@@ -10,13 +9,11 @@ import LocationSection from '@/components/LocationSection';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
-
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <PromoCountdown />
-      <main style={{ paddingTop: '144px' }}>
+      <main>
         <HeroSection />
         <ServicesSection />
         <ReservationSection />
@@ -26,7 +23,6 @@ const Index = () => {
       </main>
       <Footer />
       <WhatsAppButton />
-      
     </div>
   );
 };
